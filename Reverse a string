@@ -1,0 +1,5 @@
+class Solution(object):
+    def reverseString(self, s):
+        news = s[::-1]
+        for i in range(len(s)):
+            s[i]=news[i]
