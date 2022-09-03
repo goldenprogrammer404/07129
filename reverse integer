@@ -1,0 +1,10 @@
+class Solution(object):
+    def reverse(self, x):
+        c=1
+        if x<0:
+            c=-1
+        x=abs(x)
+        z=int(str(x)[::-1])
+        if -2147483648<z*c<2147483648:
+            return z*c
+        else:return 0
